@@ -21,3 +21,14 @@
 .container:active {
   background: #57d272;
 }
+
+@media (max-width: 320px) {
+  .container {
+    width: 200px;
+    height: 50px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

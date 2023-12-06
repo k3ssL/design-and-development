@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./AnotherAuction.module.css";
 import Card from "./UI/Card/Card";
 import AllAuctionButton from "./UI/AllAuctionButton/AllAuctionButton";
+import SliderCounter from "./UI/SliderCounter/SliderCounter";
 
 const AnotherAuction = () => {
   return (
@@ -73,7 +74,8 @@ const AnotherAuction = () => {
           stickerTime={"18 мин 12 сек"}
         />
       </div>
-      <div style={{ textAlign: "center" }}>
+      <SliderCounter />
+      <div>
         <AllAuctionButton>Все аукционы</AllAuctionButton>
       </div>
     </div>

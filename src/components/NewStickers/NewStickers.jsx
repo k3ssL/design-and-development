@@ -8,7 +8,7 @@ const NewStickers = () => {
     <div className={classes.container}>
       <div className={classes.title}>
         <img src={"/img/image 1367.svg"} alt={""} />
-        <h1 className={classes.title_text}>Новые стикеры</h1>
+        <h1>Новые стикеры</h1>
       </div>
       <Slider
         slideOne={"/img/Ghost-2.svg"}
@@ -20,6 +20,8 @@ const NewStickers = () => {
         <StickerSliderCount count={2} />
         <StickerSliderCount count={3} />
         <StickerSliderCount count={4} />
+        <StickerSliderCount count={5} />
+        <StickerSliderCount count={6} />
       </div>
     </div>
   );

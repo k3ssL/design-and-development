@@ -14,9 +14,6 @@
   grid-template-columns: 48px 1fr;
   grid-column-gap: 16px;
   align-items: center;
-}
-
-.title_text {
   color: white;
 }
 
@@ -25,4 +22,46 @@
   justify-content: center;
   grid-template-columns: repeat(4, 56px);
   grid-column-gap: 26px;
+}
+
+.counters > button:nth-of-type(5),
+.counters > button:nth-of-type(6) {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 36px 0 0 12px;
+    display: grid;
+    grid-template-rows: 30px 134px 30px;
+    gap: 32px;
+    height: 350px;
+  }
+
+  .title > h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .title > img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .title {
+    grid-template-columns: 24px 1fr;
+    gap: 8px;
+  }
+
+  .counters > button:nth-of-type(5),
+  .counters > button:nth-of-type(6) {
+    display: block;
+  }
+
+  .counters {
+    display: flex;
+    gap: 12px;
+    grid-row-start: 3;
+    justify-content: start;
+  }
 }

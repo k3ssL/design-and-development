@@ -6,7 +6,7 @@ const GettingIntoTop = () => {
   return (
     <div className={classes.container}>
       <div className={classes.title}>
-        <h2 className={classes.title_text}>Для попадания в топ необходимо:</h2>
+        <h2>Для попадания в топ необходимо:</h2>
         <Requirement
           requirementImg={"/img/collections.svg"}
           requirementText={"Минимум пять опубликованных работ"}

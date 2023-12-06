@@ -56,9 +56,38 @@
   border: 2px solid #57d272;
 }
 
-.attach_text {
+.content > p {
   font-family: Muller, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #95959d;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 296px;
+    height: 200px;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .content {
+    width: 296px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .plus {
+    font-size: 60px;
+  }
+
+  .content > p {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }

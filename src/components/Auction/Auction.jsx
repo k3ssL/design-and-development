@@ -28,9 +28,7 @@ const Auction = () => {
           <TimerIndicator />
         </div>
 
-        <PlaceABetButton styles={{ gridRowStart: "4", gridColumnStart: "2" }}>
-          Сделать ставку
-        </PlaceABetButton>
+        <PlaceABetButton> Сделать ставку </PlaceABetButton>
       </div>
     </div>
   );

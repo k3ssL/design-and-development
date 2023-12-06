@@ -8,7 +8,7 @@
   padding: 32px 0 0 320px;
 }
 
-.title_text {
+.title > h2 {
   font-size: 24px;
   line-height: 24px;
   color: #fff;
@@ -18,4 +18,24 @@
   display: grid;
   grid-template-rows: 30px repeat(3, 30px);
   grid-row-gap: 16px;
+}
+
+@media (max-width: 320px) {
+  .container {
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0 0 12px;
+    gap: 32px;
+  }
+
+  .title > h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .title {
+    grid-template-rows: 42px repeat(3, 32px);
+    gap: 16px;
+  }
 }

@@ -15,10 +15,6 @@
   grid-row-start: 1;
 }
 
-.sticker_name {
-  grid-column-start: 2;
-}
-
 .profile_info {
   display: grid;
   grid-column-start: 2;
@@ -46,6 +42,7 @@
   grid-row-start: 3;
   font-size: 48px;
   line-height: 48px;
+  grid-column-start: 2;
 }
 
 .sticker_price,
@@ -56,4 +53,40 @@
 
 .sticker_price_transfer {
   color: #95959d;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 132px;
+    height: 226px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21.6px;
+    padding: 16px 0 0 16px;
+  }
+
+  .sticker_img {
+    width: 108px;
+    height: 108px;
+    text-align: left;
+    position: relative;
+    left: -10px;
+  }
+
+  .sticker_name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .sticker_price,
+  .sticker_price_transfer {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .sticker_price_info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }

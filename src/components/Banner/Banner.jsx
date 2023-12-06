@@ -14,6 +14,7 @@ const Banner = () => {
           <BannerButtonBuy>Купить</BannerButtonBuy>
           <BeAuthorButton>Стать автором</BeAuthorButton>
         </div>
+        <img src={"/img/123123.png"} alt={""} />
       </div>
       <img src={"/img/stickers_hero.png"} alt={""} />
     </div>

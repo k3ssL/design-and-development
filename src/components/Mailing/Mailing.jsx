@@ -17,6 +17,7 @@ const Mailing = () => {
         <Checkbox />
       </div>
       <img src={"/img/Frame 29.svg"} alt={""} />
+      <img src={"/img/asdsad.png"} alt={""} />
     </div>
   );
 };

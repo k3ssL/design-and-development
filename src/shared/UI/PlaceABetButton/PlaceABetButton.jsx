@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./PlaceABetButton.module.css";
 
-const PlaceABetButton = ({ children, styles }) => {
+const PlaceABetButton = ({ children }) => {
   return (
-    <button className={classes.container} style={styles}>
+    <button className={classes.container}>
       <p className={classes.text}>{children}</p>
     </button>
   );

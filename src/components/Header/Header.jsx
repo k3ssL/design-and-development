@@ -5,7 +5,7 @@ import classes from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={classes.header}>
+    <header className={classes.header}>
       <img src={"./img/Vector.svg"} alt={""} />
       <nav className={classes.nav_text}>
         <NavText>Авторы</NavText>
@@ -13,7 +13,9 @@ const Header = () => {
         <NavText>Сервисы</NavText>
       </nav>
       <NavButton>Кошелёк</NavButton>
-    </div>
+      <img src={"/img/23123.svg"} alt={""} />
+      <hr className={classes.nav_line} />
+    </header>
   );
 };
 

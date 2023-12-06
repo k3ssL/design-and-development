@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <div className={classes.container}>
       <img src={"/img/Vector.svg"} alt={""} />
+      <hr />
       <div className={classes.text}>
         <h2>Соглашение</h2>
         <h2>Лицензия</h2>

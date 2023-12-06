@@ -17,16 +17,9 @@ const BeAuthor = () => {
         тобой и обговорим условия сотрудничества! <b>Удачи!</b>
       </p>
       <img src={"/img/Frame 31.svg"} alt={""} />
-      <Attach styles={{ gridRow: " 1 / span 3" }} />
-      <Input
-        styles={{ gridColumnStart: "2", gridRowStart: "4", marginTop: "120px" }}
-        placeholder={"@telegram_nickname"}
-      />
-      <PlaceABetButton
-        styles={{ gridColumnStart: "2", gridRowStart: "4", marginTop: "220px" }}
-      >
-        Отправить
-      </PlaceABetButton>
+      <Attach />
+      <Input placeholder={"@telegram_nickname"} />
+      <PlaceABetButton> Отправить </PlaceABetButton>
     </div>
   );
 };

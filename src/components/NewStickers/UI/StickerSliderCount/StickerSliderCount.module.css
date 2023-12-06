@@ -7,7 +7,7 @@
   cursor: pointer;
 }
 
-.text {
+.container > p {
   font-family: Muller, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -24,4 +24,15 @@
 .container:active {
   background-color: #d13130;
   border: 0;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 36px;
+    height: 28px;
+  }
+  .container > p {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }

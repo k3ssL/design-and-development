@@ -10,9 +10,30 @@
   grid-column-gap: 16px;
 }
 
-.content__profile p {
+.content__profile > p {
   font-family: Muller, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+}
+
+@media (max-width: 320px) {
+  .content__profile {
+    width: 170px;
+    height: 46px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .content__profile > p {
+    font-size: 16px;
+  }
+
+  .content__profile > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
 }
