@@ -24,7 +24,7 @@
   display: none;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .container {
     padding: 0;
     height: 111px;
@@ -55,5 +55,12 @@
   .text > h2 {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    padding: 20px 0 0 36px;
+    gap: 500px;
   }
 }

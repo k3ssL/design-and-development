@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .header {
     height: 111px;
     display: grid;
@@ -51,5 +51,12 @@
     height: 1px;
     color: #c4c4c4;
     grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    padding: 20px 0 0 36px;
+    grid-template-columns: 75px 600px 1fr;
   }
 }

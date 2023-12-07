@@ -17,6 +17,7 @@ const BeAuthor = () => {
         тобой и обговорим условия сотрудничества! <b>Удачи!</b>
       </p>
       <img src={"/img/Frame 31.svg"} alt={""} />
+      <img src={"/img/Group 1247.svg"} alt={""} />
       <Attach />
       <Input placeholder={"@telegram_nickname"} />
       <PlaceABetButton> Отправить </PlaceABetButton>

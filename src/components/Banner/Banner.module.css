@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .container {
     height: 531px;
   }
@@ -64,5 +64,17 @@
 
   .content > img {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    gap: 100px;
+    grid-template-columns: 600px 1fr;
+  }
+
+  .content {
+    padding: 160px 0 0 36px;
+    grid-template-columns: 600px;
   }
 }

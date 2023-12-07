@@ -75,9 +75,7 @@ const AnotherAuction = () => {
         />
       </div>
       <SliderCounter />
-      <div>
-        <AllAuctionButton>Все аукционы</AllAuctionButton>
-      </div>
+      <AllAuctionButton>Все аукционы</AllAuctionButton>
     </div>
   );
 };

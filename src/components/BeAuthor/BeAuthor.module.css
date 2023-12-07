@@ -52,7 +52,11 @@
   grid-row: 1 / span 3;
 }
 
-@media (max-width: 320px) {
+.container > img:nth-of-type(2) {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
   .container {
     height: 703px;
     display: grid;
@@ -63,7 +67,7 @@
 
   .title {
     font-size: 30px;
-    line-height: 36.15px;
+    line-height: 36px;
   }
 
   .subtitle {
@@ -102,5 +106,59 @@
   .container > div {
     grid-column-start: 1;
     grid-row-start: 4;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    margin: 90px 0 0 36px;
+    padding: 0;
+    grid-template-rows: 250px 0 0 1fr;
+    grid-template-columns: 1fr 0;
+    gap: 0;
+    height: 797px;
+  }
+
+  .container > img:nth-of-type(1) {
+    display: none;
+  }
+
+  .container > img:nth-of-type(2) {
+    display: block;
+    grid-column-start: 1;
+  }
+
+  .subtitle,
+  .title,
+  .paragraph {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .subtitle {
+    margin-top: 72px;
+  }
+
+  .paragraph {
+    margin-top: 134px;
+    width: 798px;
+  }
+
+  .container > div:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-left: 332px;
+  }
+
+  .container > input {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin: 380px 0 0 332px;
+  }
+
+  .container > button {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin: 480px 0 0 332px;
   }
 }

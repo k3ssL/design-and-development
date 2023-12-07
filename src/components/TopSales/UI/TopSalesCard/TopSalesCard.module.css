@@ -55,14 +55,15 @@
   color: #95959d;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .container {
-    width: 132px;
+    width: 136px;
     height: 226px;
     display: flex;
     flex-direction: column;
-    border-radius: 21.6px;
-    padding: 16px 0 0 16px;
+    border-radius: 21px;
+    padding: 10px 0 0 15px;
+    gap: 8px;
   }
 
   .sticker_img {
@@ -87,6 +88,14 @@
   .sticker_price_info {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
+    gap: 3px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    width: 460px;
+    gap: 10px;
   }
 }

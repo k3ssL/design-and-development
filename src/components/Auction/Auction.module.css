@@ -54,7 +54,7 @@
 
 /*адаптация*/
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .container {
     height: 843px;
     margin: 80px 0 0 12px;
@@ -90,5 +90,27 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    margin-left: 36px;
+    height: 760px;
+  }
+
+  .content {
+    grid-template-rows: 70px 50px 166px 170px 70px;
+    gap: 32px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .content > button {
+    grid-row-start: 5;
   }
 }
